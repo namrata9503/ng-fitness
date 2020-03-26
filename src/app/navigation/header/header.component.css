@@ -1,0 +1,32 @@
+
+html, body{
+    /* font-family: 'Karla', sans-serif; */
+    font-family: 'Exo 2', sans-serif;
+
+    /* height:100%; */
+
+}
+.logo{
+    color: rgb(159, 159, 196)!important;
+    font-weight: bolder!important;
+    font-style: italic !important;
+    font-family: 'Exo 2', sans-serif !important;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+
+}
+a:hover, a:active{
+    color: lightgray;
+}
+.navigation-items{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-caption{
+display: inline-block;
+padding-left: 8px;
+}
