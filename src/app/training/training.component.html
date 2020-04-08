@@ -1,4 +1,28 @@
-<mat-tab-group *ngIf="!(ongoingTraining$ | async)">
+<section class="parallax-section">
+    <div class="row-bg">
+        <div class="parallax-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+
+            <div class="parallax-bg">
+                <img src="../../assets/images/train-bg-image.jpg" alt="new training">
+            </div>
+
+        </div>
+    </div>
+    <div class="parallax-overlay"></div>
+
+
+    <div class="center-text">
+        <div class="v-center">
+            <div class="title text-center">
+                <h4 class="upper">Fitness is our passion.</h4>
+                <h1>Make Fit Happen</h1>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<mat-tab-group *ngIf="!(ongoingTraining$ | async)" id="grp">
     <mat-tab label="New Exercise">
         <app-new-training > </app-new-training>
     </mat-tab>
@@ -9,4 +33,4 @@
     </mat-tab>
     
 </mat-tab-group>
-<app-current-training *ngIf="ongoingTraining$ | async" ></app-current-training>
+<app-current-training *ngIf="ongoingTraining$ | async"  ></app-current-training>

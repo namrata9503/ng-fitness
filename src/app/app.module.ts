@@ -24,6 +24,7 @@ import { AuthModule } from './auth/auth.module';
 import { TrainingModule } from './training/training.module';
 import { AuthRoutingModule } from './auth/auth-routing.module';
 import{ reducers } from './app.reducer';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import{ reducers } from './app.reducer';
     WelcomeComponent,
     HeaderComponent,
     SidenavListComponent,
+    FooterComponent,
     
   ],
   imports: [

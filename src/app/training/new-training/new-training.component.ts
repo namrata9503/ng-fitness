@@ -57,6 +57,14 @@ export class NewTrainingComponent implements OnInit {
     // this.trainingStart.emit();
     this.trainingService.startExercise(form.value.exercise);
   }
+
+//   openVideo() {
+
+//     var iframe = document.createElement('iframe');
+//     iframe.src = 'http://example.com';
+//     document.body.appendChild(iframe);
+ 
+//  };
   // ngOnDestroy() {
 
 

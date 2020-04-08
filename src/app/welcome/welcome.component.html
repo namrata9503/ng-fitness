@@ -1,15 +1,150 @@
-<div class="welcome" fxLayout="column" fxLayout.gt-md="row" fxLayoutGap.gt-md="20px" fxLayoutAlign="center center">
-<section>
-    <h1>Activity</h1>
-    <p>Stay active and Be healthy</p>
-</section>
-<section>
-    <h1>Community</h1>
-    <p>Get to know other people who share their passion!!</p>
-</section>
-<section>
-    <h1>Challenges</h1>
-    <p>Never Stop! Dive in new Challenges!!</p>
+<!-- <div class="welcome" fxLayout="column" fxLayout.gt-md="row" fxLayoutAlign="center center"> -->
+    <section class="parallax-section">
+        <div class="row-bg">
+            <div class="parallax-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+
+                <div class="parallax-bg">
+                    <img src="../../assets/images/events.jpg" alt="events">
+                </div>
+
+            </div>
+        </div>
+        <div class="parallax-overlay"></div>
+
+
+        <div class="center-text">
+            <div class="v-center">
+                <div class="title text-center">
+                    <h4 class="upper">LIST OF RECENT EVENTS.</h4>
+                    <h1>Our Events</h1>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+<section id="tabs">
+    <mat-tab-group>
+        <mat-tab label="All" fxLayout="column" fxLayout.gt-xs="row wrap" fxFlex="40%" fxLayoutAlign="flex-start"
+            class="tabs">
+
+
+            <div class=" all " fxLayout="column" fxLayout.gt-xs="row wrap" fxLayoutAlign="stretch center" fxFlex="70%">
+
+                <div class=" parent " fxLayoutAlign="flex-start" fxFlex="30%">
+
+                    <div class="child"><img src="../../assets/images/home.jpg" class="card-img" alt="home"></div>
+                    <div class="overlay">
+                        Home Activity
+                    </div>
+
+                </div>
+                <div class=" parent " fxLayoutAlign="flex-start" fxFlex="30%">
+
+                    <div class="child"><img src="../../assets/images/live.jpg" class="card-img" alt="live"></div>
+                    <div class="overlay">Live Activity</div>
+
+                </div>
+                <div class=" parent " fxLayoutAlign="flex-start" fxFlex="30%">
+
+                    <div class="child"><img src="../../assets/images/live2.jpg" class="card-img" alt="live2"></div>
+                    <div class="overlay">Live Activity</div>
+
+                </div>
+                <div class=" parent " fxLayoutAlign="flex-start" fxFlex="30%">
+
+                    <div class="child"><img src="../../assets/images/park-event.jpg" class="card-img" alt="park"></div>
+                    <div class="overlay">Park Activity</div>
+
+                </div>
+                <div class=" parent " fxLayoutAlign="flex-start" fxFlex="30%">
+
+                    <div class="child"><img src="../../assets/images/upcoming.jpg" class="card-img" alt="upcoming">
+                    </div>
+                    <div class="overlay">Upcoming Activity</div>
+
+                </div>
+
+            </div>
+        </mat-tab>
+        <mat-tab label="Home Workout" fxLayout="column" fxLayout.gt-xs="row wrap" fxFlex="40%"
+            fxLayoutAlign="flex-start" class="tabs">
+            <div class="all" fxLayout="column" fxLayout.gt-xs="row wrap" fxLayoutAlign="flex-start" fxFlex="70%">
+                <div class=" parent " fxLayoutAlign="flex-start" fxFlex="30%">
+
+                    <div class="child"><img src="../../assets/images/home.jpg" class="card-img" alt="upcoming"></div>
+                    <div class="overlay">Home Activity</div>
+
+                </div>
+                <div class=" parent " fxLayoutAlign="flex-start" fxFlex="30%">
+
+                    <div class="child"><img src="../../assets/images/upcoming.jpg" class="card-img" alt="upcoming">
+                    </div>
+                    <div class="overlay">Upcoming Activity</div>
+
+                </div>
+            </div>
+
+        </mat-tab>
+        <mat-tab label="Park Workout" fxLayout="column" fxLayout.gt-xs="row wrap" fxFlex="40%"
+            fxLayoutAlign="flex-start" class="tabs">
+            <div class="all" fxLayout="column" fxLayout.gt-xs="row wrap" fxLayoutAlign="flex-start" fxFlex="70%">
+                <div class=" parent " fxLayoutAlign="flex-start" fxFlex="30%">
+
+                    <div class="child"><img src="../../assets/images/park-event.jpg" class="card-img" alt="upcoming">
+                    </div>
+                    <div class="overlay">Park Activity</div>
+
+                </div>
+                <div class=" parent " fxLayoutAlign="flex-start" fxFlex="30%">
+
+                    <div class="child"><img src="../../assets/images/upcoming.jpg" class="card-img" alt="upcoming">
+                    </div>
+                    <div class="overlay">Upcoming Activity</div>
+
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab label="Live Workout" fxLayout="column" fxLayout.gt-xs="row wrap" fxFlex="40%"
+            fxLayoutAlign="flex-start" class="tabs">
+            <div class="all" fxLayout="column" fxLayout.gt-xs="row wrap" fxLayoutAlign="flex-start" fxFlex="70%">
+                <div class=" parent " fxLayoutAlign="flex-start" fxFlex="30%">
+
+                    <div class="child"><img src="../../assets/images/live2.jpg" class="card-img" alt="upcoming"></div>
+                    <div class="overlay">Live Activity</div>
+
+                </div>
+                <div class=" parent " fxLayoutAlign="flex-start" fxFlex="30%">
+
+                    <div class="child"><img src="../../assets/images/live.jpg" class="card-img" alt="upcoming"></div>
+                    <div class="overlay">Upcoming Activity</div>
+
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab label="Upcoming Workout" fxLayout="column" fxLayout.gt-xs="row wrap" fxFlex="40%"
+            fxLayoutAlign="flex-start" class="tabs">
+            <div class="all" fxLayout="column" fxLayout.gt-xs="row wrap" fxLayoutAlign="flex-start" fxFlex="70%">
+                <div class=" parent " fxLayoutAlign="flex-start" fxFlex="30%">
+
+                    <div class="child"><img src="../../assets/images/upcoming.jpg" class="card-img" alt="upcoming">
+                    </div>
+                    <div class="overlay">Upcoming Activity</div>
+
+                </div>
+                <div class=" parent " fxLayoutAlign="flex-start" fxFlex="30%">
+
+                    <div class="child"><img src="../../assets/images/park-event.jpg" class="card-img" alt="upcoming">
+                    </div>
+                    <div class="overlay">Park Event Activity</div>
+
+                </div>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+
 </section>
 
-</div>
+
+

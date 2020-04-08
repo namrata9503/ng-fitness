@@ -1,3 +1,162 @@
-mat-form-field{
-    width: 300px;
+
+.login{
+} 
+:host {
+  background: #333333;
+  position: relative;
+  display: block;
+  top: -85px;
+  left: 0;
+  /* padding: 100px; */
+  height: 700px;
+  /* width: 592px; */
+  padding: 114px 0 0 0;
+  min-width: 100%;
 }
+mat-form-field {
+    width: 300px;
+  }
+.mat-card{
+  box-shadow: none;
+}
+.mat-card {
+  padding: 0 !important;
+  min-width: 600px;
+  max-width: 600px;
+}
+  @media only screen and (max-width: 600px) {
+      .mat-card{
+        /* height: 350px !important; */
+        /* min-height: 350px !important;
+        max-height: 350px !important; */
+        padding: 0 !important;
+        min-width: 400px;
+        max-width: 400px;
+      }
+  }
+  @media only screen and (max-width: 430px) {
+    .mat-card{
+      /* height: 350px !important; */
+      /* min-height: 350px !important;
+      max-height: 350px !important; */
+      padding: 0 !important;
+      min-width: 330px;
+      max-width: 330px;
+    }
+    mat-form-field input{
+      width: 250px;
+    }
+    div.login-down{
+      background-color: #cacaca;
+      text-align: center;
+      padding: 0 !important;
+      margin:0  !important;
+    }
+    ::ng-deep .mat-datepicker-toggle{
+        /* margin: 20px !important; */
+        position: absolute;
+        top: -30px;
+        left: -65px !important;
+     }
+}
+  mat-form-field input{
+   
+    /* border: 1px solid black; */
+    padding: 10px 10px 10px 10px;
+    margin: 0;
+    box-shadow: inset 1px 1px 8px rgb(247,147,30) !important;
+}
+
+::ng-deep .mat-input-underline {
+  display: none !important;
+}
+  mat-card-title{
+    font-size: 25px;
+    
+    /* font-family: 'Exo 2', sans-serif; */
+    font-family: 'Titan One', cursive;
+    color: #58595B;
+    padding: 10px;
+    
+    }
+
+    .mat-drawer-container{
+    
+}
+.select-header{
+  border-bottom: 1px solid  lightgray;
+
+}
+.problem{
+  width: 250px;
+  font-size: 10px;
+  text-align: center;
+  margin: auto;
+}
+.problem p{
+  color: red;
+  line-height: 0;
+}
+
+.login-down{
+  background-color: #cacaca;
+  text-align: center;
+  padding: 30px !important;
+  margin: 20px 0 0 0 !important;
+}
+
+.login-inner-down {
+  padding: 0;
+  line-height: 39px;
+  margin: auto;
+}
+
+#login-down-red {
+  color: #c73737;
+  font-size: 22px;
+}
+
+#login-down-black {
+  color: #000;
+  font-size: 15.5px;
+  padding: 0;
+}
+
+#login-create-cr {
+  color: #fff;
+  background: linear-gradient(rgb(247,147,30),rgb(241,90,36));
+  box-shadow: 1px 1px 3px grey;
+  font-family: 'Knewave', cursive;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding: 15px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.cr-text-sub {
+  color: gray;
+  font-size: 14px;
+}
+.login-down a{
+  text-decoration: none;
+}
+.mat-fab.mat-primary, .mat-flat-button.mat-primary, .mat-mini-fab.mat-primary, .mat-raised-button.mat-primary {
+  background-color: linear-gradient(rgb(247,147,30),rgb(241,90,36));;
+}
+    
+  
+
+  
+ 
+ /* svg.mat-datepicker-toggle-default-icon.ng-star-inserted {
+    margin-left: -36px !important;
+
+
+} */
+::ng-deep .mat-datepicker-toggle{
+    /* margin: 20px !important; */
+position: absolute;
+    top: -30px;
+    left: -10px;
+ }

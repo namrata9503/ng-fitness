@@ -1,4 +1,6 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Router } from '@angular/router';
+
 import { Store } from '@ngrx/store';
 import { MatDialog } from '@angular/material';
 import { StopTrainingComponent } from './stop-training.component';
@@ -16,7 +18,9 @@ export class CurrentTrainingComponent implements OnInit {
   @Output() stopTraining = new EventEmitter();
   progress = 0;
   timer: number;
-  constructor(private dialog: MatDialog, private trainingService: TrainingService, private store: Store<fromTraining.State>) { }
+  constructor(private dialog: MatDialog,
+    private router:Router,
+    private trainingService: TrainingService, private store: Store<fromTraining.State>) { }
 
  
 
@@ -59,5 +63,9 @@ export class CurrentTrainingComponent implements OnInit {
     })
 
   }
+
+  gotoHome(){
+    this.router.navigate(['']);  // define your component where you want to go
+}
 
 }

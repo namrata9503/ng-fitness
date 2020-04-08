@@ -1,3 +1,292 @@
-.welcome{
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+/* .welcome{
     text-align: center;
+} */
+/* .event-content{
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+} */
+
+
+
+.center-text{
+    display: table !important;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.v-center{
+    display: table-cell;
+    vertical-align: middle;
+}
+.title {
+    margin-top: 250px ;
+    /* margin-bottom: 340px; */
+    position: relative;
+    z-index: 10;
+}
+
+ .text-center {
+    text-align: center;
+}
+
+.title > h4.upper {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+.title > h4 {
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+}
+.upper {
+    text-transform: uppercase;
+}
+.title > h1 {
+    font-size: 48px;
+    letter-spacing: -1px;
+    color: white;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+.row-bg .parallax-wrapper .parallax-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.parallax-bg img{
+    min-width: 100%;
+    height: 100vh;
+}
+.parallax-wrapper  .row-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.row-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+section.parallax-section .parallax-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+overflow: hidden;
+    width: 100%;
+    background-color: #1f1f1f;
+    opacity: .7;
+}
+
+
+
+::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label{
+    border: 1px solid #c8102e !important;
+    border-radius: 35px !important;
+    margin: 10px 10px !important;
+    /* color:#3f51b5; */
+    min-width: 50% !important;
+}
+
+::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label-active {
+
+    background-color: #c8102e;
+    border: 1px solid #c8102e !important;
+    border-radius: 35px !important;
+    margin: 10px 10px !important;
+    color: whitesmoke;
+    min-width: 50% !important;
+}
+/* .mat-tab-group{
+    align-items: center;
+
+} */
+
+.all{
+    /* max-width: 60%; */
+    margin: 10px auto 0 ;
+    overflow: hidden;
+}
+@media only screen and (max-width: 600px) {
+.card-img{
+    width: 100%;
+    height: 100%;
+}
+::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label{
+    min-width: 10% !important;
+    
+}
+::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label-active {
+    min-width: 10% !important;
+    
+
+}
+
+section.parallax-section .parallax-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+overflow: hidden;
+    width: 100%;
+    background-color: #1f1f1f;
+    opacity: .7;
+}
+::ng-deep .mat-tab-labels {
+    display: inline-block !important;;
+}
+}
+
+
+
+/* Image zoom on hover + Overlay colour */
+.parent {
+    width: 100%; 
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    /* float: left; */
+    cursor: pointer;
+  
+}
+
+.child {
+    /* height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s; */
+    transition: 0.3s;
+    overflow: hidden;
+    /* width: 100%;
+    max-height: 100%; */
+
+}
+
+
+/* .child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52,73,94,0.75);
+} */
+
+
+.overlay {
+    position: absolute;
+    color: black;
+    max-width: 50%;
+    max-height: 30%;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 2;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bolder;
+    font-variant: all-petite-caps;
+    align-items: center;
+    align-content: center;
+    background-color: whitesmoke;
+    margin: auto;
+    bottom: 10px;
+    left: 38px;
+
+    
+ }
+ 
+  .parent:hover .child, .parent:focus .child {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    transition-timing-function: ease-in;
+    transition: 1.5s;
+    transform: scale(1.1); 
+
+}  
+ /* .child:hover {
+   
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    transition-timing-function: ease-in;
+    transition: 1.5s;
+    transform: scale(1.1);
+} */
+.parent:hover  .overlay {
+    
+    opacity: 1;
+ }
+ .card-img {
+    width: 100%;
+    height: 100%;
+    background-color: black; /* fallback color */
+    background-position: center;
+    background-size: cover;
+    transition:all 0.3s ease-in-out;
+    opacity:1;
+  }
+  
+::ng-deep .mat-tab-group {
+    align-items: center;
+    margin-top: 300px;
+    position: relative;
+    z-index: 10;
+} 
+@media only screen and (max-width: 1089px){
+    ::ng-deep .mat-tab-group {
+        align-items: center;
+        margin-top: 300px;
+        position: relative;
+        z-index: 10;
+    } 
+}
+
+@media only screen and (max-width: 600px){
+    ::ng-deep .mat-tab-group {
+        align-items: center;
+        margin-top: 350px;
+        position: relative;
+        z-index: 10;
+    } 
 }

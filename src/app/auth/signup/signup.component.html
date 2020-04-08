@@ -1,4 +1,58 @@
-<section>
+<section class="signup" fxLayout="column wrap" fxLayoutAlign="center">
+    <form fxLayout="column " fxLayoutAlign="center center" fxLayoutGap="10px" #f="ngForm" (ngSubmit)="onSubmit(f)">
+
+      <mat-card fxFlex.xs="100%" fxFlex="600px" style="box-shadow: 2px 2px 30px #c8102e;">
+        <mat-card-title fxLayoutAlign="center center" class="select-header">
+          FitnessTREAT &nbsp;  signup
+        </mat-card-title>
+        <mat-card-content fxLayout="column" fxLayoutAlign="center center">
+            <mat-form-field appearance="none">
+                <input type="email" matInput placeholder="Your Email" ngModel name="email" email required
+                #emailInput= "ngModel">
+                <mat-error *ngIf="emailInput.hasError('required')">Email Field must not be Empty.</mat-error>
+                <mat-error *ngIf="!emailInput.hasError('required')">Email Field is Invalid.</mat-error>
+            </mat-form-field>
+            <mat-form-field hintLabel="Should be 4 characters long" appearance="none">
+                <input type="password" matInput placeholder="Your Password" ngModel name="password" required minlength="4"
+                    #pwInput="ngModel">
+                <mat-hint align="end">{{pwInput.value?.length}} / 4</mat-hint>
+                <mat-error >Has to be 4 characters long.</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="none">
+                <input matInput [max]="maxDate" placeholder="Your BirthDate" [matDatepicker]="picker" ngModel name="birthdate" required>
+                <mat-datepicker-toggle matSuffix  [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+            <mat-checkbox color="primary" ngModel name="agree" required>Agree Terms and Conditions</mat-checkbox>
+  
+        </mat-card-content>
+        <mat-card-actions fxLayoutAlign="center">
+  
+            <button *ngIf="!(isLoading$ | async)" type="submit" mat-raised-button color="primary" [disabled]="f.invalid">Submit</button>
+            <mat-spinner *ngIf="isLoading$ | async"></mat-spinner>
+        </mat-card-actions>
+  
+       
+        <mat-card-content fxLayout="column" fxLayoutAlign="center stretch">
+          <div fxLayout="column"   fxLayoutAlign="center center"class="problem">If you continue to experience this problem, please contact our support team at 
+            <p>dd@abc.comm</p>
+          </div>
+        <div class="login-down" >
+          <div class="login-inner-down" fxFlex="300px">
+            <p id="login-down-red">
+              No Register? No problem!
+              </p>
+              
+                <a href="" class="btn btn-default btn-block" id="login-create-cr">Create a character</a> <br>
+                <span class="cr-text-sub">(create a abcdjdksjdk.com account)</span>
+          </div>
+        </div>
+        </mat-card-content>
+      </mat-card>
+    </form>
+  </section>
+
+<!-- <section>
     <form fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px" #f="ngForm" (ngSubmit)="onSubmit(f)">
         <mat-form-field>
             <input type="email" matInput placeholder="Your Email" ngModel name="email" email required
@@ -22,4 +76,4 @@
         <mat-spinner *ngIf="isLoading$ | async"></mat-spinner>
 
     </form>
-</section>
+</section> -->

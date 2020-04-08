@@ -1,27 +1,112 @@
-<section class="new-training" fxLayout fxLayoutAlign="center">
-    <form (ngSubmit)="onStartTraining(f)" #f="ngForm">
-    <mat-card fxFlex.xs="100%" fxFlex="400px"> 
-        <mat-card-title fxLayoutAlign="center">
-            Start Workout!!
-        </mat-card-title>
-        <mat-card-content fxLayoutAlign="center">
-            <mat-form-field *ngIf="!(isLoading$ | async) && exercises$ | async" >
-                <mat-label>Choose Exercise: </mat-label>
-                <mat-select ngModel name="exercise" required>
-                  <mat-option *ngFor="let exercise of exercises$ | async " [value]="exercise.id">
-                    {{ exercise.name }}
-                  </mat-option>
-                  
-                </mat-select>
-              </mat-form-field>
-              <mat-spinner *ngIf="isLoading$ | async"></mat-spinner>
 
-        </mat-card-content>
-        <mat-card-actions  fxLayoutAlign="center" *ngIf="!(isLoading$ | async)">
-            <button *ngIf="exercises$ | async" type="submit"color="primary" mat-button [disabled]="f.invalid">Start</button>
-            <button *ngIf="!(exercises$ | async)" type="button"color="primary" mat-button (click)="fetchExercises()">FETCH AGAIN</button>
 
-        </mat-card-actions>
-    </mat-card>
-    </form>
+
+<article fxLayout="column" class="new">
+    <section class="iframe-container" fxLayoutAlign="center ">
+        <iframe id="workout" src="https://www.youtube.com/embed/ECxYJcnvyMw" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </section>
+
+    <section class="new-training" fxLayoutAlign="center">
+        <form (ngSubmit)="onStartTraining(f)" #f="ngForm">
+            <mat-card fxFlex.xs="100%" fxFlex="600px" style="box-shadow: 2px 2px 30px #c8102e;">
+                <mat-card-title fxLayoutAlign="center" class="select-header">
+                    Start Workout!!
+                </mat-card-title>
+                <mat-card-content fxLayoutAlign="center">
+                    <mat-form-field *ngIf="!(isLoading$ | async) && exercises$ | async"  style="font-size: 20px;">
+                        <mat-label>Choose Exercise: </mat-label>
+                        <mat-select ngModel name="exercise" required >
+                            <mat-option *ngFor="let exercise of exercises$ | async " [value]="exercise.id" 
+                            style="background-color: #921126; color: ghostwhite; font-style: italic;
+                            font-variant: all-petite-caps;">
+                              {{ exercise.name }}
+                            </mat-option>
+
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-spinner *ngIf="isLoading$ | async"></mat-spinner>
+
+                </mat-card-content>
+                <mat-card-actions fxLayoutAlign="center" *ngIf="!(isLoading$ | async)">
+                    <button *ngIf="exercises$ | async" type="submit" color="primary" mat-button
+                        [disabled]="f.invalid" 
+                        style="font-size: 25px;
+                        padding: 20px; border-radius: 18px;">START</button>
+                    <button *ngIf="!(exercises$ | async)" type="button" color="primary" mat-button
+                        (click)="fetchExercises()">FETCH AGAIN</button>
+
+                </mat-card-actions>
+            </mat-card>
+        </form>
+    </section>
+
+</article>
+<hr class="hr">
+
+<article class="goals">
+    <section class="set-goals" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="flex-start">
+        <div class="play" fxLayout="column" fxFlex="30" >
+            <div class="dynamic">DYNAMIC MOVEMENT TRAINING</div>
+            <p>
+            <a routerLink="/training#workout">
+                 <button type="button" color="primary" mat-button class="play-button" > 
+                    <span class="material-icons">
+                        play_arrow
+                    </span>
+                </button></a>
+                WATCH THE VIDEO
+            </p>
+        </div>
+        <div class="goal-image" fxFlex="80" fxLayoutAlign=" stretch">
+            <img src="../../../assets/images/training4.jpg" alt="goal">
+        </div>
+        <div class="goal-content" fxFlex="39">
+
+            <div class="goal-title">
+                REACH YOUR GOALS.
+            </div>
+            <div class="goal-list">
+                <ul class="list-workouts ">
+                    <li><span class="material-icons">check_circle_outline</span>Burpees</li>
+                    <li><span class="material-icons">check_circle_outline</span>Functional Training</li>
+                    <li><span class="material-icons">check_circle_outline</span>Plank</li>
+                    <li><span class="material-icons">check_circle_outline</span>Push-ups</li>
+                    <li><span class="material-icons">check_circle_outline</span>Core</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="set-goals" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="flex-start">
+        <div class="exercise1 goal-image  "  fxFlex="30"fxLayoutAlign=" stretch" >
+            <img src="../../../assets/images/training2.jpg" alt="exercise">
+
+        
+        </div>
+        <div class="exercise-content " fxFlex="31" fxLayout="column" >
+            <p><span class="material-icons">
+                settings_input_svideo
+                </span></p>
+            <h2>Make Your Goal. Start Workout..!!!</h2>
+            <p>Group entered the fitness market with one differentiating goal – to provide health clubs that offer a world-class fitness option reachable to absolutely everyone.</p>
+               <p>Fitness 360 is all about being fit and lifestyle changes. We don’t just stop at a work out, we also propagate and promote healthy living that you can take beyond the time spent at the gym.</p>
+        </div>
+        <div class="exercise-person goal-image" fxFlex="40" fxLayoutAlign=" stretch" >
+            <img src="../../../assets/images/training3.jpg" alt="exercise">
+           
+        </div>
+    </section>
+</article>
+
+<section class="join-us">
+    <div class="join">
+        <h5>JOIN US TODAY</h5>
+        <p>We develop and design a unique approach to
+            attain a balance between lifestyle and fitness. We eventually aim for all our members to develop the skills and confidence to lead healthy, happy and productive lives.</p>
+
+    </div>
+
 </section>
+

@@ -1,0 +1,278 @@
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.center-text{
+    display: table !important;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.v-center{
+    display: table-cell;
+    vertical-align: middle;
+}
+.title {
+    margin-top: 250px ;
+    /* margin-bottom: 340px; */
+    position: relative;
+    z-index: 10;
+}
+/* .parallax-overlay .row-bg{
+    margin-bottom: 90px;
+} */
+
+ .text-center {
+    text-align: center;
+}
+
+.title > h4.upper {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+.title > h4 {
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+}
+.upper {
+    text-transform: uppercase;
+}
+.title > h1 {
+    font-size: 48px;
+    letter-spacing: -1px;
+    color: white;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+.row-bg .parallax-wrapper .parallax-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.parallax-bg img{
+    min-width: 100%;
+}
+.parallax-wrapper  .row-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.row-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+section.parallax-section .parallax-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+overflow: hidden;
+    width: 100%;
+    background-color: #1f1f1f;
+    opacity: .7;
+}
+
+
+@media only screen and (min-width: 600px)   {
+    .title {
+        /* margin-top: 250px ; */
+         margin-bottom: 75px; 
+        
+    }
+    .parallax-section .parallax-overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        /* height: 42%; */
+        width: 100%;
+        background-color: #1f1f1f;
+        opacity: .7;
+    }
+    /* ::ng-deep .mat-tab-group {
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+    } */
+}
+@media only screen and (min-width: 850px)   {
+    .title {
+        /* margin-top: 250px ; */
+         margin-bottom: 105px; 
+        
+    }
+    .parallax-section .parallax-overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        /* height: 50%; */
+        width: 100%;
+        background-color: #1f1f1f;
+        opacity: .7;
+    }
+    /* ::ng-deep .mat-tab-group {
+        display: flex;
+        flex-direction: column;
+        margin-top: 195px;
+    } */
+}
+@media only screen and (min-width: 980px)   {
+    .title {
+        /* margin-top: 250px ; */
+         margin-bottom: 145px; 
+        
+    }
+    .parallax-section .parallax-overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        /* height: 55%; */
+        width: 100%;
+        background-color: #1f1f1f;
+        opacity: .7;
+    }
+    /* ::ng-deep .mat-tab-group {
+        display: flex;
+        flex-direction: column;
+        margin-top: 193px;
+    } */
+}
+@media only screen and (min-width: 1095px)   {
+    .title {
+        /* margin-top: 250px ; */
+         margin-bottom: 295px; 
+        
+    }
+    .parallax-section .parallax-overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        /* height: 75%; */
+        width: 100%;
+        background-color: #1f1f1f;
+        opacity: .7;
+    }
+    /* ::ng-deep .mat-tab-group {
+        display: flex;
+        flex-direction: column;
+        margin-top: 184px;
+    } */
+}
+
+
+@media only screen and (max-width: 600px) {
+    .title {
+        /* margin-top: 250px ; */
+         margin-bottom: 55px; 
+        
+    }
+   
+    .card-img{
+        width: 100%;
+        height: 100%;
+    }
+    ::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label{
+        min-width: 10% !important;
+        
+    }
+    ::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label-active {
+        min-width: 10% !important;
+        
+    
+    }
+    
+    .parallax-section .parallax-overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        /* height: 41%; */
+        width: 100%;
+        background-color: #1f1f1f;
+        opacity: .7;
+    }
+    ::ng-deep .mat-tab-labels {
+        display: inline-block !important;;
+    }
+    /* ::ng-deep.mat-tab-group {
+        display: flex;
+        flex-direction: column;
+        margin-top: 190px;
+    } */
+
+    }
+   
+
+
+    
+
+::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label{
+    /* border: 1px solid #3f51b5; */
+    border-radius: 35px !important;
+    margin: 10px 10px !important;
+    /* color:#3f51b5; */
+    /* width: 50% !important; */
+}
+
+::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label-active {
+
+    /* background-color: #92939c; */
+    /* border: 1px solid #3f51b5 !important; */
+    border-radius: 35px !important;
+    margin: 10px 10px !important;
+    /* color: whitesmoke; */
+    /* width: 50% !important; */
+}
+/* .mat-tab-group{
+    align-items: center;
+    width: 50%;
+} */
+/* 
+::ng-deep .mat-tab-list{
+    margin-top: 40px auto 0 !important;
+    max-width: 50% !important;
+    
+} */
+
+::ng-deep .mat-tab-group {
+    align-items: center;
+    margin-top: 300px;
+    position: relative;
+    z-index: 10;
+} 
+@media only screen and (max-width: 1089px){
+    ::ng-deep .mat-tab-group {
+        align-items: center;
+        margin-top: 300px;
+        position: relative;
+        z-index: 10;
+    } 
+}
+
+@media only screen and (max-width: 600px){
+    ::ng-deep .mat-tab-group {
+        align-items: center;
+        margin-top: 350px;
+        position: relative;
+        z-index: 10;
+    } 
+}

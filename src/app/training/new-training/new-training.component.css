@@ -1,3 +1,246 @@
-.new-training{
-    padding:30px
+html, body{
+    /* font-family: 'Karla', sans-serif; */
+    font-family: 'Exo 2', sans-serif !important;
+    margin:0;
+    padding: 0;
+
+
 }
+
+.new-training{
+    padding:50px;
+    /* position: relative;
+    top:0;
+    left: 0; */
+    /* max-width: 100%;
+   max-height: 100%; */
+}
+.mat-option.mat-active{
+    background-color: #c8102e !important;
+    color: ghostwhite ;
+
+    /* font-size: 50px; */
+}
+
+ 
+.iframe-container{
+    position: relative;
+    width: 70%;
+
+    padding-bottom: 56.25%; 
+    height: 360px;
+    margin: auto;
+    
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  @media only screen and (max-width: 1600px) and (min-width: 600px){
+    .iframe-container iframe
+        {
+            position: absolute;
+            /* margin: auto !important; */
+
+            /* top: 0; */
+            /* left: 0; */
+            
+            height: 100%; 
+             
+            }
+            .iframe-container{
+                margin: 40px auto;
+                
+            }
+    .new-training{
+    padding: 40px;
+    margin: 40px auto;
+
+            }
+  }
+.select-header{
+    color: #c8102e;
+    font-weight: bolder;
+    font-size: 50px;
+}
+  .hr{
+    height: 30px; 
+    border-style: solid; 
+    border-color: #c8102e; 
+    border-width: 4px 0 0 0; 
+    border-radius: 20px; 
+  }
+
+  .hr:before { 
+    display: block; 
+    content: ""; 
+    height: 30px; 
+    margin-top: -31px; 
+    border-style: solid; 
+    border-color: #c8102e; 
+    border-width: 0 0 1px 0; 
+    border-radius: 20px;    
+  }
+
+  .set-goals{
+        display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-box-orient: horizontal; 
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    flex-direction: row;
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;  
+    align-items: center;
+  }
+
+  .play{
+    display: flex;
+    align-items: center;
+    background-color: ghostwhite;
+    /* max-height: 396px; */
+
+}
+.play p{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin:55px auto;
+    
+}
+.play-button{
+    background-color:#c8102e ;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    line-height: 48px!important;
+    margin: 10px;
+}
+.play-button span{
+    color: white;
+}
+.dynamic{
+    font-size: 31px;
+    font-weight: bolder;
+    margin: auto;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    font-style: italic;
+}
+.goal-image{
+    padding: 0;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    
+    
+    text-align: center;
+    /* height: 300px; */
+    display: flex;
+    align-items: center;
+    box-sizing: content-box;
+}
+   img{
+      /* max-width: 100%; */
+      /* display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  object-fit: contain; */
+  
+    width: 100%;
+    /* max-width: 500px; */
+    max-height:100%
+
+      
+  }
+  .goal-title{
+    font-weight: bolder;
+    margin: 0;
+    padding: 10px;
+    line-height: 50px;
+    /* align-items: center; */
+    /* text-align: center; */
+    /* font-style: italic; */
+    font-size: 3vw;
+  }
+  .goal-content{
+      /* padding: 30px; */
+      background-color: #c8102e;
+      color: white;
+      /* max-height: 396px; */
+
+      /* align-items: center; */
+    /* display: flex; */
+    padding: 80px;
+    align-content: space-between;
+    line-height: 30px;
+  }
+ li span{
+         /* padding-right: 5px !important; */
+    padding: 0 5px 0 0 !important;
+    position: absolute;
+    /* right: -20px; */
+    left: -34px;
+    /* top: 0;*/
+ }
+  .list-workouts{
+      list-style: none;
+      padding: 0;
+      position: relative;
+    top: 0;
+    left: 40px;
+    /* right: 20px;*/
+  }
+
+  .exercise-content{
+      padding: 20px;
+      background-color: ghostwhite;
+      line-height: 30px;
+      /* max-height: 555px; */
+
+  }
+  .exercise-content h2{
+      margin-top: 15px;
+  }
+  .exercise-content .material-icons{
+    font-weight: lighter;
+    font-size: 35px;
+    color: gray;
+    padding: 17px;
+  }
+  .join{
+      text-align: center;
+      padding: 20px;
+      background-color: whitesmoke;
+  }
+  .join h5{
+      font-weight: bolder;
+      font-size: 3.4rem;
+  }
+  .join p{
+      font-weight: lighter;
+      color: gray;
+      font-size: 1.4rem;
+      padding: 0 95px;  
+    line-height: 30px;
+    }
+ 
+  
+  

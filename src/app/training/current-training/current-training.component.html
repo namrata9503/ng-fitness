@@ -1,6 +1,27 @@
-<section class="current-training" fxLayout="column" fxLayoutAlign="center center">
-    <mat-progress-spinner mode="determinate" [value]="progress"></mat-progress-spinner>
-    <h1>{{progress}}%</h1>
-    <p>keep on going, you can do it!!</p>
-    <button mat-raised-button color="accent" (click)="onStop()">STOP</button>
-</section>
+<article class="current"  fxLayout="column" fxLayoutAlign="center stretch">
+    
+    <section class="current-training" fxLayout="column"  fxLayoutAlign="center center"
+     fxFlex="150">
+        <mat-progress-spinner mode="determinate" [value]="progress"></mat-progress-spinner>
+        <h1>{{progress}}%</h1>
+        <p class="keep">keep on going, you can do it!!</p>
+        <button mat-raised-button color="accent" (click)="onStop()"
+            style="padding:20px 30px; margin:20px 0;">STOP</button>
+    </section>
+
+    <section class="current-container last-section" fxFlex="180" flexLayout="column"  fxLayoutAlign="center stretch">
+        <div class="current-div">
+            <div class="wrapper" style="transform: translate3d(0px, -15.48px, 0px);">
+                <img src="../../../assets/images/bg-gym.jpg" class="bg-image" alt="workout">
+                <div class="overlay"></div>
+            </div>
+        </div>
+        <div class="content">
+            <p style="font-size:13px;">WANT TO MAKE A DIFFERENCE?</p>
+            <h1>Make Fit Happen</h1>
+            <p class="p">Our Brand, simply means well being in all aspects to create a healthy lifestyle.</p>
+            <button mat-raised-button color="accent" class="btn-touch" (click)="gotoHome()">Get In Touch</button>
+        </div>
+
+    </section>
+</article>
